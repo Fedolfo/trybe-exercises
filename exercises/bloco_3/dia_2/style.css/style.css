@@ -1,11 +1,34 @@
+body{
+    font-size: 16px;
+    font-size: 3em;
+}
+
 .title{
     font-size: 65px;
-    color:orange
+    color:orange;
+    font-family: sans-serif;    
+    text-align: center;
+    border-style:solid; 
+     
 }
 .list{
     background-color: grey;
+    font-style: italic;
+    line-height: 50px;
+    text-decoration: underline;
+   
+   
+    
 }
 .ulist{
     background-color: coral;
-   
+    border-style: solid;
+    margin-left: 20%;   
+    margin-right: 20%;
+       
 }
+p{
+    font-weight: 600px;
+}
+
+    
