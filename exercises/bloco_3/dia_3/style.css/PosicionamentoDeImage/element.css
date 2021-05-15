@@ -1,37 +1,64 @@
 .super-mario {
   position: absolute;
   width: 100px;
+  left: 200px;
   z-index: 1;
 }
 
 .goomba {
   position: absolute;
   width:100px;
-  top: 35%;
+  left: 200px;
+  top: 230px;
 }
 
 .baloon {
  position: absolute;
   width: 110px;
-  left: 30%;
-
-  
+  left: 689px;
+  top:220px;
+ 
 }
 
 .bowser {
   position: absolute;
   width: 100px;
   left: 44%;
+  top: 248px;
 }
 
 .word {
   position: absolute;
   font-size: 10px;
-  left: 31%;
+  left: 693px;
+  top: 223px;
   line-height: 32px;
   z-index: 2;
 
 }
+
+.tubo {
+  width: 100px;
+  height: 100px;
+  margin-left: 470px;
+  border-radius: 10px;
+  margin-top: 220px;
+  
+  
+  
+}
+
+.street {
+  
+  height: 2px;
+  margin: 2px;
+  padding: 2px;
+  margin-top: 8px;
+  min-width:  100px;
+  
+}
+
+
 
 /*- Posicione o Mário acima do Goomba.
 - Posicione a tag p para que fique dentro do balão de fala.
