@@ -7,9 +7,11 @@
 
 .goomba {
   position: absolute;
+  background-size: cover;
   width:100px;
   left: 200px;
-  top: 230px;
+  top: 276px;
+  z-index: 2;
 }
 
 .baloon {
@@ -17,6 +19,7 @@
   width: 110px;
   left: 1090px;
   top:220px;
+  z-index: 3;
  
 }
 
@@ -24,7 +27,8 @@
   position: absolute;
   width: 100px;
   left: 1200px;
-  top: 248px;
+  top: 288px;
+  z-index: 4;
 }
 
 .word {
@@ -33,7 +37,7 @@
   left: 1095px;
   top: 223px;
   line-height: 32px;
-  z-index: 2;
+  z-index: 5;
 
 }
 
@@ -43,7 +47,6 @@
   margin-left: 470px;
   border-radius: 10px;
   margin-top: 8px;
-  
   
   
 }
@@ -67,6 +70,7 @@
   margin-top: 220px;
   
 }
+
 
 /*- Posicione o Mário acima do Goomba.
 - Posicione a tag p para que fique dentro do balão de fala.
