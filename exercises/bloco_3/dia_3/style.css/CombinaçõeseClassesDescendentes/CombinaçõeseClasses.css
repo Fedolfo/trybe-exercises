@@ -31,16 +31,18 @@ h1 {
   border: 1px solid black;
 }
 
-ul li:nth-child(-n+3) {
-  color: red
-}
 
+
+.colori:nth-child(-n+3){
+  color: red;
+}
 .j{
   background-color: pink;
 }
 
 ul li a:hover {
   font-weight: 800;
+  
 }
 
 .stack:hover{
