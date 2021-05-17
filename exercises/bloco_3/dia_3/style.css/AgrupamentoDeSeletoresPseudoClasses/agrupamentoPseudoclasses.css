@@ -1,3 +1,7 @@
+div {
+  margin-right: 300px;
+}
+
 div:nth-child(1) :hover {
   border: solid rgb(167, 70, 70);
   
