@@ -3,14 +3,20 @@
   text-align: justify;
   background-color: azure;
   border-radius: 10px;
+  
 }
 h1{
   text-align: center;
   padding-top: 20px;
   background-color: azure;
+  text-decoration: underline;
 }
 
- td{
+h2, h3{
+  text-decoration: underline;
+}
+
+td{
   border: 2px solid; 
   padding: 5px;
   background-color: cadetblue;
@@ -69,12 +75,14 @@ table {
 }
 
 main{
+  
   margin-left: 10px;
   margin-right: 10px;
 }
 .text-medium{
   width: 52%;
   text-align: justify;
+  
 }
 
 
@@ -102,4 +110,17 @@ li:hover{
   margin-right: auto;
   padding: 15px;
   
+}
+
+footer{
+  text-align: center;
+  margin: 20px 0 0px 0;
+  background-color: #000;
+  color: white;
+  padding: 1px;
+  border-radius: 0 0 15px 15px;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+    
 }
