@@ -36,6 +36,10 @@ table {
   float: right;
   
 }
+caption {
+  border: 2px solid;
+  font-size: 20px;
+}
 
 .menu{
   background-color: aquamarine; 
@@ -97,6 +101,7 @@ main{
   border-right-width: 5px;
   border-bottom-width: 10px;
   border-radius: 12px;
+  
 
 }
 li:hover{
