@@ -1,0 +1,104 @@
+.conteiner {
+  font-family: sans-serif;
+  text-align: justify;
+  background-color: azure;
+  border-radius: 10px;
+}
+h1{
+  text-align: center;
+  background-color: azure;
+}
+
+ td{
+  border: 2px solid; 
+  padding: 5px;
+  background-color: cadetblue;
+  
+  
+}
+
+th{
+  text-align: left;
+  background-color: antiquewhite;
+  border: 2px solid;
+}
+
+
+table {
+  margin: 0;
+  float: right;
+  
+}
+
+.menu{
+  background-color: aquamarine; 
+  text-align: center;
+  width: 310px;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 10px;
+  
+   
+}
+
+.list {
+  display: inline-block;
+  background-color: antiquewhite;
+  border: 2px solid rgb(121, 83, 83);
+  padding: 6px;
+  margin: 5px;
+  border-top-width: 0px;
+  border-right-width: 5px;
+  border-bottom-width: 10px;
+  border-radius: 12px;
+  
+}
+
+.menu-list {
+  padding: 5px;
+  
+  
+}
+
+.conteiner {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+main{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.text-medium{
+  width: 52%;
+  text-align: justify;
+}
+
+
+
+.list-footer  {
+  display: inline-block;
+  background-color: antiquewhite;
+  border: 2px solid rgb(121, 83, 83);
+  padding: 6px;
+  margin: 5px;
+  border-top-width: 0px;
+  border-right-width: 5px;
+  border-bottom-width: 10px;
+  border-radius: 12px;
+
+}
+li:hover{
+   
+   background-color: rgb(43, 226, 73);
+}
+
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  
+}
