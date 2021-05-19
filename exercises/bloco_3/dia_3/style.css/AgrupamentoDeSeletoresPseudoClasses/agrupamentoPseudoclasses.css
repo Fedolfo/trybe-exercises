@@ -1,0 +1,28 @@
+div {
+  margin-right: 300px;
+}
+
+div:nth-child(1) :hover {
+  border: solid rgb(167, 70, 70);
+  
+}
+
+div:nth-child(2) :hover {
+  border: solid purple;
+}
+
+div:nth-child(3) :hover {
+  font-size: 30px;
+  border: solid lawngreen;
+}
+
+div:nth-child(4) :hover {
+  border: solid rgb(48, 26, 26);
+}
+
+div:nth-child(5) :hover {
+  border: solid aquamarine;
+}
+div:nth-child(odd) {
+  font-style: italic;
+}

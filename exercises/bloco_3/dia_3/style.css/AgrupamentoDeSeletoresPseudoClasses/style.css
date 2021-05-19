@@ -1,0 +1,26 @@
+.header-title{
+  text-align: center;
+}
+
+.list {
+  margin-left: 20px;
+  list-style: none;
+  
+}
+
+li:hover {
+  
+  
+  background-color: green;
+  margin-right: 300px;
+  padding: 2px;
+  border: 3px solid black;
+}
+li:active {
+
+  color: brown;
+}
+
+li {
+  list-style: none;
+}

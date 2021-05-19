@@ -1,0 +1,65 @@
+li em {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+ol li {
+  background-color: yellow;
+}
+
+
+ol li:nth-child(odd) {
+  
+  text-transform: uppercase;
+}
+
+ol li:nth-child(1) {
+  text-transform: none;
+}
+
+ol li:nth-child(even) {
+  color: green;
+}
+
+h1, h3{
+  color: red;
+  
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+
+
+.colori:nth-child(-n+3){
+  color: red;
+}
+.j{
+  background-color: pink;
+}
+
+ul li a:hover {
+  font-weight: 800;
+  
+}
+
+.stack:hover{
+  color: orange;
+}
+.w3:hover {
+  color: greenyellow;
+}
+
+.mdn:hover {
+  color: black;
+}
+
+.dev:hover {
+  color: rgb(255, 255, 0);
+}
+
+.trybe:hover {
+  color: green;
+}

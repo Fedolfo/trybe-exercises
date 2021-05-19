@@ -1,0 +1,78 @@
+.super-mario {
+  position: absolute;
+  width: 100px;
+  left: 200px;
+  z-index: 1;
+}
+
+.goomba {
+  position: absolute;
+  background-size: cover;
+  width:100px;
+  left: 200px;
+  top: 276px;
+  z-index: 2;
+}
+
+.baloon {
+ position: absolute;
+  width: 110px;
+  left: 1090px;
+  top:220px;
+  z-index: 3;
+ 
+}
+
+.bowser {
+  position: absolute;
+  width: 100px;
+  left: 1200px;
+  top: 288px;
+  z-index: 4;
+}
+
+.word {
+  position: absolute;
+  font-size: 10px;
+  left: 1095px;
+  top: 223px;
+  line-height: 32px;
+  z-index: 5;
+
+}
+
+.tubo {
+  width: 80px;
+  height: 100px;
+  margin-left: 470px;
+  border-radius: 10px;
+  margin-top: 8px;
+  
+  
+}
+
+.street {
+  
+  height: 2px;
+  margin: 2px;
+  padding: 10px;
+  margin-top: 8px;
+  min-width:  150px;
+  
+}
+
+.tubo-quadrant {
+  width: 110px;
+  height: 18px;
+  margin: 2px;
+  padding: 2px;
+  margin-left: 455px;
+  margin-top: 220px;
+  
+}
+
+
+/*- Posicione o Mário acima do Goomba.
+- Posicione a tag p para que fique dentro do balão de fala.
+- Posicione o balão para que se torne uma fala de Bowser.
+- Posicione os elementos para que tenham alguma distância entre si.*/
