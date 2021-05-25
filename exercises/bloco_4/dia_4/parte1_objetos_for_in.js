@@ -9,7 +9,7 @@ let info = {
 
 /*2- Insira no objeto uma nova propriedade com o nome de chave 'recorrente' e o valor 'Sim' e, em seguida, imprima o objeto no console.
 Valor esperado no console:*/
-info.recorrente = true;
+info.recorrente = "sim";
 // console.log(info)
 
 /*3-Faça um for/in que mostre todas as chaves do objeto.
@@ -34,8 +34,12 @@ let info2 = {
   origem: 'Christmas on Bear Mountain. Dells Four Color Comics #178',
   nota: 'O último MacPatinhas'
 };
-info2.recorrente = true;
-for (const key in info) {
-  console.log(info[key]+ " é " + info2[key],"ambos são recorrentes")
+info2.recorrente = "sim";
+for (let key in info) {
+  if (info[key] === info.recorrente &&   info[key] === "sim" && info2[key] === "sim" ) {
+      console.log("ambos recorrentes");
+
+    } else{
+      console.log(info[key]+ " é " + info2[key])
+  }
 }
-  
