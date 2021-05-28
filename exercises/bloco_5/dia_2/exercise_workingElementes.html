@@ -73,7 +73,15 @@
       pai_de_todos.appendChild(filhoMain)
 
       let divlist = document.querySelector(".main-content");
-      filhoMain.append(divMain)
+      divMain.append(filhoMain)
+
+      const texto = document.createElement("p");
+      texto.innerHTML = "Quero ser rapido igual o flash mas não em correr, mas sim em pensar!";
+      pai_de_todos.appendChild(texto);
+
+      let textDivFilho =document.querySelector("p");
+      filhoMain.append(texto)
+
     </script>
   </body>
 </html>
