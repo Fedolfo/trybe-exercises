@@ -62,9 +62,18 @@
 
       const title = document.createElement("h1");
       title.innerHTML= "Exercício 5.2 - JavaScript DOM";
-      
       pai_de_todos.appendChild(title);
       
+      const divMain = document.createElement("div");
+      divMain.classList.add("main-content");
+      pai_de_todos.appendChild(divMain);
+
+      const filhoMain = document.createElement("div");
+      filhoMain.classList.add("center-content");
+      pai_de_todos.appendChild(filhoMain)
+
+      let divlist = document.querySelector(".main-content");
+      filhoMain.append(divMain)
     </script>
   </body>
 </html>
