@@ -18,9 +18,17 @@ a cor do mesmo;
 Segue abaixo um exemplo do uso de event.target:
 */
 
-input.addEventListener('input',function (frase) {
-   divUm.textContent = frase.target.value;
-})
+function mudaBloco(event) {
+  const elementoTech = document.querySelector('.tech');
+  elementoTech.classList.remove('tech');
+  event.target.classList.add('tech');
+  input.value = '';
+}
+
+divUm.addEventListener('click', mudaBloco);
+divDois.addEventListener('click', mudaBloco);
+divTres.addEventListener('click', mudaBloco);
+
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
@@ -29,6 +37,14 @@ function resetText(event) {
   // que retorna o objeto que disparou o evento.
 }
 
+input.addEventListener('input', function(event) {
+  const techElement = document.querySelector('.tech');
+  techElement.innerText = event.target.value;
+});
+
+myWebpage.addEventListener('dblclick', function () {
+  window.location.replace('http://fedolfo.github.io/');
+});
 divUm.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro do addEventListener. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
