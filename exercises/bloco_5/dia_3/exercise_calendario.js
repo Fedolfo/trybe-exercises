@@ -104,3 +104,28 @@ btnFriday.addEventListener("click", function(){
   }
 })
 //================================================================\\
+//exercicio 6
+
+function mouseOver(){
+  let dia =document.getElementById("days");
+
+  dia.addEventListener("mouseover", function(event){
+    event.target.style.fontSize = "30px";
+    event.target.style.fontHeigth = "600";
+  })
+}
+
+function removeMouseOver(){
+  let dia = document.getElementById("days");
+  
+  dia.addEventListener("mouseout", function(event){
+    event.target.style.fontHeigth = "200";
+    event.target.style.fontSize = "20px";
+  })
+}
+
+mouseOver()
+removeMouseOver()
+
+//================================================================\\
+//exercicio 7
