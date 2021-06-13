@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      const pai_de_todos = document.body
+      //1
+      const title = document.createElement("h1");
+      title.innerHTML= "Exercício 5.2 - JavaScript DOM";
+      title.classList.add("title")
+      pai_de_todos.appendChild(title);
+      
+      //2
+      const divMain = document.createElement("div");
+      divMain.classList.add("main-content");
+      pai_de_todos.appendChild(divMain);
+      divMain.style.backgroundColor="green"
+      //3
+      const filhoMain = document.createElement("div");
+      filhoMain.classList.add("center-content");
+      pai_de_todos.appendChild(filhoMain)
+      
+      let divlist = document.querySelector(".main-content");
+      divMain.append(filhoMain)
+      //4
+      const texto = document.createElement("p");
+      texto.innerHTML = "Quero ser rapido igual o flash mas não em correr, mas sim em pensar!";
+      pai_de_todos.appendChild(texto);
+
+      let textDivFilho =document.querySelector("p");
+      filhoMain.append(texto)
+      //5
+      const divLeft = document.createElement("div");
+      divLeft.classList.add("left-content");
+      pai_de_todos.appendChild(divLeft);
+
+      let divFilhoLeft = document.querySelector(".center-content");
+      divMain.insertBefore(divLeft,filhoMain)
+      //6
+      const divRight = document.createElement("div");
+      divRight.classList.add("right-content");
+      divRight.style.margin="auto"
+      pai_de_todos.appendChild(divRight)
+
+      let divFilhoRight = document.querySelector(".center-content");
+      divMain.insertBefore(divRight,filhoMain);
+      //7
+      const image = document.createElement("img");
+      image.classList.add("small-image");
+      image.src = "https://picsum.photos/200";
+      pai_de_todos.appendChild(image);
+      
+      let filhoImage = document.querySelector("left-content");
+      divLeft.append(image)
+      
+      //8
+
+      const tag3 = document.createElement("h3")
+      tag3.innerText = "The Rock"
+      tag3.classList.add("description")
+      divRight.appendChild(tag3)
+
+      let lista = document.createElement('ul');
+      divRight.appendChild(lista)
+      
+      let arr = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let i = 0; i < arr.length; i += 1) {
+      let listaLi = document.createElement('li');
+      listaLi.innerText = arr[i];
+      divRight.appendChild(listaLi)
+      listaLi.style.display="Inline-block"
+      listaLi.style.margin="10px"
+      listaLi.className= "listaDasLi"
+}     
+      let lista2 = document.createElement('ul');
+      divRight.appendChild(lista2)
+
+      //9
+      const tag1 = document.createElement("h3")
+      tag1.innerText = "Dominic Toretto"
+      tag1.classList.add("description")
+      filhoMain.appendChild(tag1)
+      filhoMain.insertBefore(tag1, texto)
+
+      const tag2 = document.createElement("h3")
+      tag2.innerText = "Paisagem"
+      tag2.classList.add("description")
+      divLeft.appendChild(tag2)
+      divLeft.insertBefore(tag2 , image)
+      tag2.style.textAlign = "center"
+      
+      //10
+      divMain.removeChild(divLeft)
+      // const lista = document.createElement("ol")
+      // const listaUl = document.createElement("li")
+
+      //11 - defeito
+      let listaLis = document.querySelectorAll(".listaDasLi")
+      for(let index of listaLis) {
+        let elemento = index;
+        if(elemento.innerHTML.includes("Nove")){
+          
+        }
+      }
+    </script>
+  </body>
+</html>
