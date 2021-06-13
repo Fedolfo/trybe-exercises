@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>FORMULÁRIO</h1> 
+                     <!--post  -->
+  <form action="" method="get" enctype="multipart/form-data">
+    <!--  -->
+    <div>
+    <label for="input-text">Dígite seu nome</label>
+    <input type="name" placeholder="Digite algo" required name="name" id="input-text">
+    <button type="submit">enviar</button>
+    <br>
+    <br>
+    <label for="text-info">Digite a suas informações:</label>
+    <br>
+    <textarea name="formulario" id="text-info" cols="30" rows="10" required></textarea>
+    <br>
+    <button type="submit">enviar</button>
+    <!--  -->
+    <input type="checkbox"  name="esporte" value="fut" id="esporte-1"> Futebol
+    <input type="checkbox" name="esporte" value="vol" id="esporte-2"> Vôlei
+    <input type="checkbox" name="esporte" value="bas" id="esporte-3"> Basquete
+    <br>
+    <br>
+    <!--  -->
+    <label for="hub1"><input type="radio" name="hub" id="hub1" value="sp">São Paulo</label>
+    <label for="hub2"><input type="radio" name="hub" id="hub2" value="bh">Belo Horizonte</label>
+    <label for="hub3"><input type="radio" name="hub" id="hub3" value="fl">Florianópolis</label> 
+    <label for="hub4"><input type="radio" name="hub" id="hub4" value="mc">Macedônia</label>
+    <!--  -->
+    <select name="estado" id="dropdown-estado">
+      <option value="sp">São Paulo</option>
+      <option value="mg">Minas Gerais</option>
+      <option value="ba">Bahia</option>
+      <option value="am">Amazonas</option>
+    </select>
+    <input type="file" name="foto" id="">
+    <!--  -->
+    <p>Usuário:</p>
+    <input type="text" name="user" required>
+    <p>Senha:</p>
+    <input type="password" name="senha" id="" required>
+    <br>
+    <br>
+    <button type="submit" class="" name="" id="">Enviar</button>
+  </form>
+</body>
+</html>
