@@ -1,4 +1,5 @@
 const statesBrazil = [
+"",
 "Acre",
 "Alagoas" ,
 "Amazonas",
@@ -60,44 +61,174 @@ let picker = new Pikaday({
   }
 });
 
+const myform = document.querySelector(".myform")
 
+new window.JustValidate('.js-form');
 
-const pageForm = document.querySelector("form")
-pageForm.addEventListener('submit', pageForms)
-
-function pageForms(call1, call2) {
- return  validaName(call1), validaCpf(call2)
-}
-
-function validaName(e) {
-  let nome = document.getElementById("name")
-
-  if (nome.value.length >= 5) {
-   
-  } else if (nome !== 5) {
-    let nomeAlert = document.getElementById("alertNome")
-    nomeAlert.style.display = "block";
-    e.preventDefault();
-    nome.focus()
-    console.log("ok");
-  }
-  return 
-}
-
-function validaCpf(i) {
-  let cpf = document.getElementById("cpf-register");
-
-  if (cpf.value.length >=11 && cpf.value.length <=11) {
-        i.preventDefault();
-        cpf.focus()
-  } else if (cpf !== 11) {
-    console.log("valida");
-    let cpfAlert = document.getElementById("cpf")
-    cpfAlert.style.display = "block";
+new JustValidate('.js-form', {
+  rules: {
+    name: {
+      required: true,
       
-  }
-  return 
-}
+    },
+    radio: {
+      required: true
+    },
+    email: {
+      required: true,
+      email: true
+    },
+    cpf: {
+      required: true,
+      minLength: 11,
+      maxLength:11
+    },
+    address: {
+      required: true
+    },
+    city: {
+      required: true
+    },
+    state: {
+      required: true
+    },
+    cargo: {
+      required: true,
+      maxLength: 40
+    },
+    date: {
+      required: true
+    },
+    resumo_curriculo: {
+      required: true,
+      maxLength: 500
+    },
+    description_cargo: {
+      required: true,
+      maxLength: 1000
+    }
+  },
+  messages: {
+    name: 'Coloque o seu nome',
+
+    email: 'Registre o e-mail',
+    
+    cpf: 'Digite o seu CPF',
+
+    address: 'Digite o seu endereço',
+
+    city: 'Digite a sua cidade',
+
+    state: 'Seleciona o seu Estado',
+    
+    radio: 'Selecione uma dessas opções',
+
+    cargo: 'Coloque o seu cargo',
+
+    date:  'Registre a sua data de inicio',
+
+    resumo_curriculo: 'Obrigatório',
+
+    description_cargo: 'Obrigatório'
+  },
+
+  focusWrongField: true,
+
+  submitHandler: function (form, values, ajax) {
+    ajax({
+        url: 'https://just-validate-api.herokuapp.com/submit',
+        method: 'GET',
+        data: values,
+        async: true,
+        callback: function (response) {
+            alert('AJAX submit successful! \nResponse from server:' + response)
+            myform.submit()
+          },
+        error: function (response) {
+            alert('AJAX submit error! \nResponse from server:' + response)
+        }
+    });
+},
+
+invalidFormCallback: function (errors) {
+    console.log(errors);
+},
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const pageForm = document.querySelector("form")
+// pageForm.addEventListener('submit', pageForms)
+
+// function pageForms(event) {
+//   event.preventDefault()
+//   validaName()
+//   validaCpf()
+// }
+
+// function validaName() {
+//   let nome = document.getElementById("name")
+
+//   if (nome.value.length >= 5) {
+//     console.log("if1")
+//   } else {
+//     let nomeAlert = document.getElementById("alertNome")
+//     nomeAlert.style.display = "block";
+//     nome.focus()
+//     console.log("ok");
+//   }
+// }
+
+// function validaCpf(i) {
+//   let cpf = document.getElementById("cpf-register");
+
+//   if (cpf.value.length == 11) {
+//         console.log("if2")
+//   } else {
+//     console.log("valida");
+//     let cpfAlert = document.getElementById("cpf")
+//     cpfAlert.style.display = "block";
+//   }
+// }
 
     // function alerts() {
 //   let nome = document.getElementById("alertNome")

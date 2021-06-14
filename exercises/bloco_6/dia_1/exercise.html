@@ -7,76 +7,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Build a formulary</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="exercise.css" />
 </head>
 
 <body>
   <main>
-    <form method="GET" action="" class="js-form form">
+    <form method="GET" action="" class="js-form form myform" id="conteinerMain">
       <fieldset>
-        <legend>Formulário</legend>
-        <div class="content-liner">
-          <div id="alertNome">Digite o seu nome completo</div>
-          <label for="nome">Nome:
+        <legend id="title">Formulário</legend>
+       <div id="conteiner-register">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome:
             <input type="text" placeholder=" Digite seu nome "
-              name=" name " id="name" placeholder="Digite o seu nome completo" /></label>
+            data-validate-field="name" class="form__input form-control" name=" name " id="name" placeholder="Digite o seu nome completo" /></label>
         </div>
-        <div class="content-liner">
-          <label for="email">E-mail:
-            <input type="email" name="email" id="email" maxlength="50" /></label>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail:
+            <input type="email" class="form-control" data-validate-field="email" name="email" id="email" maxlength="50" /></label>
         </div>
-        <div class="content-liner">
-          <div id="cpf">CPF inválido</div>
-          <label for="cpf-register">Digite o seu CPF:
-            <input type="text" id="cpf-register" name="cpf" maxlength="" /></label>
+        <div class="mb-3">
+          <label for="cpf-register" class="form-label">Digite o seu CPF:
+            <input type="number" class="form-control" id="cpf-register" data-validate-field="cpf" name="cpf"   maxlength="11" /></label>
         </div>
-        <div class="content-liner">
-          <label for="address">Seu endereço:
-            <input type="text" name="address" id="address" maxlength="200" /></label>
+        <div class="mb-3">
+          <label for="address" class="form-label">Seu endereço:
+            <input type="text" class="form-control" name="address" id="address" data-validate-field="address" maxlength="200" /></label>
         </div>
-        <div class="content-liner">
-          <label for="city">Cidade: <input type="text" id="city" name="city" /></label>
+        <div class="mb-3">
+          <label for="city" class="form-label">Cidade: <input type="text" class="form-control" id="city" data-validate-field="city" name="city" /></label>
         </div>
-        <div class="content-liner">
-          Estado:
-          <select name="stateOfBrazil" id="state-of-brazil"></select>
+      </div>  
+        <div class="mb-3" id="seletor">
+          <label for="" class="form-label"> Estado:
+          <select name="state" class="form-select form-select-sm seletor" data-validate-field="state" id="state-of-brazil">
+          </select></label>
         </div>
-        <div class="content-liner">
-          <label for="home1">Casa:<input type="radio" name="home" data-validate-field="radio" id="home1"
+      <div id="radio-cheking">
+        <div class="form-check corrigi">
+          <label for="home1" class="form-check-label">Casa<input type="radio" class="form-check-input" name="home" data-validate-field="radio" id="home1"
               value="house" /></label>
-          <label for="home2">Apartamento:<input type="radio" name="home" data-validate-field="radio" id="home2"
+        </div>
+        <div class="form-check corrigi">    
+          <label for="home2" class="form-check-label">Apartamento<input type="radio" class="form-check-input" name="home" data-validate-field="radio" id="home2"
               value="apartment" /></label>
         </div>
+      </div>  
       </fieldset>
       <fieldset>
-        <legend>StoryTelling of job</legend>
-        <div class="content-liner">
-          <label for="Curriculo">Resuma o seu currículo: <br />
-            <textarea name="resumo_curriculo" id="Curriculo" cols="30" rows="10" maxlength="1000"
-              placeholder="Máximo 1000 caracteres."></textarea>
-          </label>
-          <br />
-        </div>
-        <div class="content-liner">
-          <label for="cargo">Seu cargo:<input type="text" maxlength="40" id="cargo" name="cargo"
+        <legend id="secondTitle">StoryTelling of job</legend>
+      <div id="informationCargoDate">
+        <div class="mb-3">
+          <label for="cargo" class="form-label">Seu cargo:<input type="text" class="form-control" data-validate-field="cargo" maxlength="40" id="cargo" name="cargo"
               placeholder="cargo" /></label>
         </div>
-        <br />
-        <div class="content-liner">
-          <label for="description">Descreva o seu cargo: <br />
-            <textarea name="description_cargo" id="description" cols="30" rows="10" maxlength="500"
+        <div class="mb-3">
+          <label for="dateInicio" class="form-label">Data De ínicio:
+            <input type="text" class="form-control" name="date" id="dateInicio" data-validate-field="date" value="" /></label>
+        </div>
+      </div>
+      <div id="informationTextCurriculo">
+        <div class="mb-3">
+          <label for="Curriculo">Resuma o seu currículo: 
+            <textarea name="resumo_curriculo" class="form-control" id="Curriculo" data-validate-field= "resumo_curriculo" cols="40" rows="12" maxlength="1000"
+              placeholder="Máximo 1000 caracteres."></textarea>
+          </label>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Descreva o seu cargo: 
+            <textarea name="description_cargo" class="form-control" id="description" data-validate-field= "description_cargo" cols="40" rows="12" maxlength="500"
               placeholder="Máximo 500 caracteres."></textarea>
           </label>
         </div>
-        <div class="content-liner">
-          <label for="dateInicio">Data De ínicio:
-            <input type="text" name="data_inicio" id="dateInicio" value="" /></label>
-        </div>
+      </div>
       </fieldset>
-      <button class="confirmation" type="submit">Enviar</button>
+      <button class="btn btn-primary btnPosition" type="submit">Enviar</button>
     </form>
   </main>
-  <script src="/bloco_6/node_modules/just-validate/dist/js/just-validate.js"></script>
+  <script src="/bloco_6/node_modules/just-validate/dist/js/just-validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <script src="exercise.js"></script>
 </body>
