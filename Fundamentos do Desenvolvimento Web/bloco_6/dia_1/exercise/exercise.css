@@ -1,0 +1,63 @@
+body {
+	background-color: rgb(190, 185, 185);
+}
+
+#conteiner-register {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
+#seletor {
+	display: flex;
+	justify-content:center;
+}
+
+#state-of-brazil {
+	width: 400px;
+}
+
+#title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	margin-bottom: 40px;
+	height: 100px;
+	background-color: rgb(190, 185, 185);
+}
+
+#radio-cheking {
+	display: flex;
+	justify-content: center;
+}
+
+.corrigi {
+	margin-left: 10px;
+}
+
+#secondTitle {
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background-color: rgb(190, 185, 185);
+}
+
+#informationCargoDate {
+	display: flex;
+	justify-content: center;
+}
+
+#informationTextCurriculo {
+	display: flex;
+	justify-content: space-around;
+}
+
+.btnPosition {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 50px;
+}
