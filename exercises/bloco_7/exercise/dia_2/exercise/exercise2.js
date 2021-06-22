@@ -51,8 +51,8 @@ listsKeys(lesson1)
 /*3 Crie uma função para mostrar o tamanho de um objeto.
  */
 
-// const listSize = (size) => {   Maneira errada!!
-// Object.entries(size).length
+// const listSize = (size) => {  // Maneira errada!!
+// const entry = Object.entries(size)
 //   for (const index in entry) {
 //     console.log(`${entry[index]}`)
 //   }
