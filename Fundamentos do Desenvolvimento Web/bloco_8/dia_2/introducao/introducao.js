@@ -87,12 +87,12 @@
 // const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
 
 // const hasName = (arr, name) => {
-//   //Adicione seu código aqui
+
 //   return arr.some(arrVal => name === arrVal);
 // }
-//   //   return arr.some(function(arrVal) {
-//   //   return val === arrVal;
-//   // }
+//     return arr.some(function(arrVal) {
+//     return val === arrVal;
+//   }
 
 
 // console.log(hasName(names, 'Ana'))
@@ -110,7 +110,7 @@
 //   //Adicione seu código aqui
 //   return arr.every((person) => person.age >= minimumAge);}
 
-// console.log(verifyAges(people, 18));
+// console.log(verifyAges(people, 16)); //true
 
 /*1 - Utilize a sort para ordenar o array pela idade das pessoas em ordem crescente . */
 
@@ -122,21 +122,21 @@ const people = [
   { name: 'Bruna', age: 19 },
 ];
 
-// people.sort((a, b) => (a.age > b.age) ? 1 : -1)
+people.sort((a, b) => (a.age > b.age) ? 1 : -1)
 
 people.sort(function(a, b) {
   return a.age - b.age;
 });
 
-// people.sort(function (a, b) {
-//   if (a.age > b.age) {
-//     return 1;
-//   }
-//   if (a.age < b.age) {
-//     return -1;
-//   }
-//   // a must be equal to b
-//   return 0;
-// });
+people.sort(function (a, b) {
+  if (a.age > b.age) {
+    return 1;
+  }
+  if (a.age < b.age) {
+    return -1;
+  }
+  // a must be equal to b
+  return 0;
+});
 
 console.log(people);
