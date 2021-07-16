@@ -31,7 +31,6 @@ const changeColors = (colors) => {
     )
 }
 
-
 checkbox.addEventListener("change", ({target}) => {
     target.checked ? changeColors(darkMode) : changeColors(initialColors)
 })
@@ -55,44 +54,15 @@ decrease.addEventListener('click', function () {
   paragrafo.style.fontSize = (getfontsize(paragrafo) - 1) + "px";
 });
 
-let lineHeight = document.getElementById("lineHeight")
-let lineHeight1 = document.getElementById("lineHeight1")
-
-let getLineHeight = (line) => {
-  let height = window.getComputedStyle(line, null)
-                     .getPropertyValue("line-height");
-    return height
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let cor = document.getElementById("color")
 let cor1 = document.getElementById("color1")
 let cor2 = document.getElementById("color2")
 let cor3 = document.getElementById("color3")
 
-
 cor.addEventListener('click', () => {
   let coresParagrafo = document.querySelector("p");
-  coresParagrafo.style.color= "purple";
-  
+    coresParagrafo.style.color= "purple";
 });
 
 cor1.addEventListener('click', () => {
@@ -105,31 +75,40 @@ cor2.addEventListener('click', () => {
   coresParagrafo.style.color= "#333333";
 });
 
-cor3.addEventListener('click', () => {
-  let coresParagrafo = document.querySelector("p");
-  coresParagrafo.style.color= "#b08f0b";
-});
-
-
-// function mouseOver(){
-//   let dia =document.getElementById("color");
-
-//   dia.addEventListener("mouseover", function(event){
-//     event.target.style.backgroundColor = "purple";
-//   })
-// }
-
-
-// function removeMouseOver(){
-//   let dia = document.getElementById("color");
-  
-//   dia.addEventListener("mouseout", function(event){
-//     event.target.style.backgroundColor = "wheat"
-   
-//   })
-// }
+// cor3.addEventListener('click', () => {
+//   let coresParagrafo = document.querySelector("p");
+//   coresParagrafo.style.color= "#b08f0b";
+// });
 
 
 
-mouseOver()
-removeMouseOver()
+const isExistLocalStorage = (key) => 
+  localStorage.getItem(key) != null
+
+const createOrEditLocalStorage = (key, value) => 
+  localStorage.setItem(key, JSON.stringify(value))
+
+const getValeuLocalStorage = (key) =>
+  JSON.parse(localStorage.getItem(key))
+
+checkbox.addEventListener("change", ({target}) => {
+  if (target.checked) {
+    changeColors(darkMode) 
+    createOrEditLocalStorage('modo','darkMode')
+  } else {
+    changeColors(initialColors)
+    createOrEditLocalStorage('modo','initialColors')
+  }
+})
+
+if(!isExistLocalStorage('modo'))
+  createOrEditLocalStorage('modo', 'initialColors')
+
+
+if (getValeuLocalStorage('modo') === "initialColors") {
+  checkbox.removeAttribute('checked')
+  changeColors(initialColors);
+} else {
+  checkbox.setAttribute('checked', "")
+  changeColors(darkMode);
+}
