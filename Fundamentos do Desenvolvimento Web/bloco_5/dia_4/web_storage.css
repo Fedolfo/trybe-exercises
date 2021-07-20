@@ -101,5 +101,14 @@ button{
   height: 60px;
   font-size: 20px;
   position: relative;
-  left: 1300px;
+}
+
+.purple { 
+  color: purple;
+  text-align: justify;
+}
+
+.green {
+  color: green;
+  text-align: justify;
 }
