@@ -1,0 +1,7 @@
+.HelloWorld {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  font-size: 100px;
+  font-weight: 700;
+}
