@@ -7,11 +7,11 @@ const {
 
 describe("a função verifyCredentials()", () => {
   
-  it("verifyCredentials() calls the correct function depending on the user and password input", () => {
-    expect(verifyCredentials({ userName, password })).toBe(
-      "Hello, Joana! Que bom ter você de volta"
-    ); 
-  });
+  // it("verifyCredentials() calls the correct function depending on the user and password input", () => {
+  //   expect(verifyCredentials({ userName, password })).toBe(
+  //     "Hello, Joana! Que bom ter você de volta"
+  //   ); 
+  // });
 
   it("greetingMessage() returns a message in the format: `Hello, ${user}! Que bom ter você de volta`", () => {
     expect(greetingMessage("Lucas")).toBe(
