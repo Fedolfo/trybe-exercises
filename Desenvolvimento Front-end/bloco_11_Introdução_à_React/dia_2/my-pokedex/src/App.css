@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: flex-start;
+  background-image: url(https://pokemongolive.com/img/posts/anniversaryposter2019.jpg);
+  background-size: contain;
+}
+
+.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+}
+
+.cardPokemon {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  background-color: azure;
+  border: 1px solid;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+  height: 300px;
+  width: 300px;
+  font-weight: 900;
+  font-size: larger;
+  border-radius: 6%;
+}
