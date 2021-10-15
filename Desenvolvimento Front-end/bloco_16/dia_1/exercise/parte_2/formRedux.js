@@ -14,6 +14,7 @@ const ESTADO_INICIAL_2 = {
   cidade: 'São Paulo',
 };
 
+// ========== REDUCERS ==============
 const meuPrimeiroReducer = (state = ESTADO_INICIAL_1, action) => {
   switch (action.type) {
     case'FIRST_USER':
@@ -44,6 +45,8 @@ const fusãoReducers = combineReducers({
   meuPrimeiroReducer,
   meuSegundoReducer
 })
+
+// ========== STORE ==============
 
 const store = Redux.createStore(fusãoReducers);
 

@@ -32,16 +32,17 @@ const ESTADO_INICIAL = {
 };
 
 const reducer = (state = ESTADO_INICIAL, action) => {
+  let { index, colors } = state;
   switch(action.type) {
     case NEXT_COLOR:
       return {
         ...state,
-        index: ((state.index === state.colors.length) ? state.index = 0 : state.index += 1)
+        index: ((index === colors.length -1) ? index = 0 : index += 1)
       };
       case PREVIOUS_COLOR:
         return {
           ...state,
-          index: ((state.index === 0) ? state.index = state.colors.length : state.index -= 1)
+          index: ((index === 0) ? index = colors.length -1 : index -= 1)
       };
       case RANDOM_COLOR:
         return {
