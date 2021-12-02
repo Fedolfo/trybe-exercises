@@ -1,0 +1,2 @@
+docker image build ./ -t cowsay
+docker container run cowsay -f moofasa "#VQV TRYBE"
