@@ -1,0 +1,28 @@
+{
+  "name": "introdution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/**/*$NAME*.test.js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.15.0",
+    "sequelize-cli": "^6.4.1",
+    "sequelize-test-helpers": "^1.4.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.2.0",
+    "sinon": "^13.0.0"
+  }
+}

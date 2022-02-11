@@ -1,0 +1,22 @@
+{
+  "name": "introdution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/**/*$NAME*.test.js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.2.0",
+    "sinon": "^12.0.1"
+  }
+}
