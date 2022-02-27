@@ -1,0 +1,14 @@
+{
+  "name": "introdution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./dist/index.js",
+    "dev": "tsnd index.ts",
+    "build": "tsc"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

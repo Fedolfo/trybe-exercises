@@ -1,0 +1,66 @@
+
+[
+  {
+      "type": "Ebook",
+      "name": "Memórias de Um Sargento de Milícias",
+      "price": 7.9,
+      "image": "milicias.jpg",
+      "author": "De Almeida, Manuel Antônio",
+      "publishingCompany": "Saraiva de Bolso",
+      "isbn": "3658548568"
+  },
+  {
+      "type": "Ebook",
+      "name": "Malditas Serpentes",
+      "price": 2.9,
+      "image": "serpentes.jpg",
+      "author": "Serafim, Ricardo",
+      "publishingCompany": "Editora Independente",
+      "isbn": "1701927357"
+  },
+  {
+      "type": "Ebook",
+      "name": "Gabriela, Cravo e Canela",
+      "price": 20.5,
+      "image": "gabriela.jpg",
+      "author": "Amado, Jorge",
+      "publishingCompany": "Companhia das Letras",
+      "isbn": "3529523157"
+  },
+  {
+      "type": "Ebook",
+      "name": "As Esganadas",
+      "price": 25,
+      "image": "josoares.jpg",
+      "author": "Soares, Jô",
+      "publishingCompany": "Companhia das Letras",
+      "isbn": "3687073456"
+  },
+  {
+      "type": "Ebook",
+      "name": "A Vida como ele é",
+      "price": 16.9,
+      "image": "nrodrigues.jpg",
+      "author": "Rodrigues, Nelson",
+      "publishingCompany": "Saraiva de Bolso",
+      "isbn": "3660846132"
+  },
+  {
+      "type": "Ebook",
+      "name": "Manuscrito encontrado em Accra",
+      "price": 12.99,
+      "image": "pcoelho.jpg",
+      "author": "Coelho, Paulo",
+      "publishingCompany": "Sextante",
+      "isbn": "4080653781"
+  },
+  {
+      "type": "PDF",
+      "name": "Anhangá - A fúria do Demônio",
+      "price": 32.5,
+      "image": "anhanga.jpg",
+      "author": "Modesto, J",
+      "publishingCompany": "Giz Editorial",
+      "isbn": "3978238594"
+  }
+]
