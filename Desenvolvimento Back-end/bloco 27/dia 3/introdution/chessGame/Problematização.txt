@@ -1,0 +1,3 @@
+No trabalho do mês, foi solicitado que criasse uma implementação de um tabuleiro de xadrez, com algumas peças que podem se mover no tabuleiro.
+A título de exemplo, neste problema desconsidere que as peças podem ser adversárias, e pense em como você implementaria um peão e uma torre.
+Ambos, Peão e Torre , devem possuir um método mover , respeitando as regras de movimentação de um peão e de uma torre no xadrez.
