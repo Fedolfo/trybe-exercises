@@ -1,0 +1,72 @@
+use('business');
+db.restaurants.find();
+db.restaurants.countDocuments();
+
+
+use('business');
+db.restaurants.countDocuments({ borough: { $in: ['Queens', 'Staten Island', 'Bronx'] } });
+
+use('business');
+db.restaurants.countDocuments({ cuisine: { $ne: 'American'} });
+
+use('business');
+db.restaurants.countDocuments({ rating: { $gte: 8} });
+
+
+use('business');
+db.restaurants.countDocuments({ rating: { $nin: [5, 6, 7]} });
+
+use('business');
+db.restaurants.countDocuments({$or: [
+        { rating: { $lte: 5 } },
+        { rating: { $exists: false } }
+    ]})
+
+use('business');
+db.restaurants.countDocuments({$or: [
+        { rating: { $gte: 6 } },
+        { borough: 'Brooklyn'}
+    ]})
+
+use('business');
+db.restaurants.countDocuments({
+  $and: {[{}]
+   borough: { $in: ['Queens', 'Staten Island', 'Bronx']
+}}})
+
+use('business');
+db.restaurants.countDocuments({
+  $and: [
+    { borough: { $in: ['Queens', 'Staten Island', 'Bronx'] } },
+    { rating: { $gt: 4} }
+    ]
+})
+
+use('business');
+db.restaurants.countDocuments({
+  $and: [
+    { rating: { $ne: { $gte: 1 }} },
+    { cuisine: { $ne: 'American'} }
+    ]
+})
+
+use('business');
+db.restaurants.countDocuments({
+    $and: [
+      { $or: [{ rating: { $gt: 6, $lt: 10 } }] },
+      { $or: [{ borough: 'Brooklyn' }, { cuisine: { $ne: 'Delicatessen' } }] },
+    ],
+  })
+
+use('business');
+db.restaurants.find().sort({ "name": 1 }).pretty();
+
+use('business');
+db.restaurants.find().sort({ "rating": -1 }).pretty();
+
+
+use('business');
+db.restaurants.deleteOne({ cuisine: "Ice Cream, Gelato, Yogurt, Ices" });
+
+use('business');
+db.restaurants.deleteMany({ cuisine: "American" });

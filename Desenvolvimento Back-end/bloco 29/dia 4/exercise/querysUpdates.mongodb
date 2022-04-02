@@ -1,0 +1,158 @@
+use('class');
+db.movies.find();
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Batman',
+  },
+  {
+    $set: {
+        imdbRating:  7.7
+    }
+  }
+);
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Godzilla',
+  },
+  {
+    $set: {
+        budget: 1
+    }
+  }
+);
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Home Alone',
+  },
+  {
+    $set: {
+        budget: 15,
+        imdbRating: 5.5
+    }
+  }
+);
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Batman',
+  },
+  {
+    $inc: {
+        imdbRating: 2
+    }
+  }
+);
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Home Alone',
+  },
+  {
+    $inc: {
+        budget: 5,
+    }
+  }
+);
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Batman',
+  },
+  {
+    $mul: {
+        imdbRating: 4
+    }
+  }
+);
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Batman',
+  },
+  {
+    $rename: {
+        imdbRating: 'estimatedBudget'
+    }
+  }
+);
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Home Alone',
+  },
+  {
+    $min: {
+        budget: 5,
+    }
+  }
+);
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Godzilla',
+  },
+  {
+    $max: {
+        imdbRating: 8.6,
+    },
+    $set: {
+      "category.1": 'Thriller',
+    }
+  }
+);
+
+use('class');
+db.movies.updateOne(
+  {
+    title: 'Home Alone',
+  },
+  {
+    $set: {
+        lastUpdated: new Date()
+    }
+  }
+);
+
+use('class');
+db.movies.updateMany(
+  {},
+  { $set: { sequels: 0 } },
+);
+
+use('class');
+db.movies.updateMany(
+  {},
+  {
+    $unset: {
+      budget: "",
+      estimatedBudget: "",
+    },
+  },
+);
+
+use('class');
+db.movies.updateMany(
+  {
+    $or: [
+      { title: "Batman" },
+      { title: "Home Alone" },
+    ],
+  },
+  {
+    $max: {
+      imdbRating: 17,
+    },
+  },
+);

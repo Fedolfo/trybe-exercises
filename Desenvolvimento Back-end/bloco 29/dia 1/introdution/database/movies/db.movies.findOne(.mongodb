@@ -1,0 +1,4 @@
+db.movies.findOne(
+    { "title" : "Forrest Gump" },
+    { "title" : 1, "imdb_rating" : 1, "_id": 0 }
+)

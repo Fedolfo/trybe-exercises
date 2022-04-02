@@ -1,0 +1,13 @@
+db.bios.find() // Selecionando todos os documentos da coleção
+
+db.bios.find( { _id: 5 } ) // Selecionando documentos com critérios de busca
+
+db.bios.find( { "name.last": "Hopper" } ) // Selecionando documentos com critérios de busca
+
+db.bios.find({}, { name: 1 }) // Projetando somente os atributos requeridos: name
+
+db.bios.find().limit(5).pretty() // Selecionando 5 documentos e formatando o resultado
+
+db.bios.find().skip(2) // Ignorando os primeiros 2 documentos
+
+db.bios.find().skip(2).limit(5).pretty() // Selecionando 5 documentos a partir do documento 2 e formatando o resultado

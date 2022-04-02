@@ -1,0 +1,155 @@
+use('cinema');
+db.movies.find();
+
+use('cinema');
+db.movies.find(
+  {
+    category: {
+      $all: ['action', 'adventure']
+    }
+  }
+);
+
+use('cinema');
+db.movies.find(
+  {
+    category: {
+      $all: ['action']
+    },
+    imdbRating: {
+        $gte: 7
+    }
+  }
+);
+
+use('cinema');
+db.movies.find(
+  {
+    ratings: {
+      $gt: 103
+    }
+  },
+  {
+    _id: 0,
+    title: 1,
+    ratings: 1
+  }
+);
+
+use('cinema');
+db.movies.find(
+  {
+    ratings: {
+        $all: [100, 105],
+        $mod: [5, 0]
+    }
+  },
+  {
+    _id: 0,
+    title: 1,
+    ratings: 1
+  }
+);
+
+use('cinema');
+db.movies.find(
+  {
+    category: {
+      $all: ['adventure']
+    },
+    ratings: {
+        $elemMatch: {
+          $gt: 103
+        }
+    }
+  },
+  {
+    _id: 0,
+    title: 1,
+    category: 1,
+    ratings: 1
+  }
+);
+
+use('cinema');
+db.movies.find(
+  {
+    category: {
+      $size: 2
+    }
+  },
+  {
+    _id: 0,
+    title: 1
+  }
+);
+
+use('cinema');
+db.movies.find(
+  {
+    budget: {
+      $mod: [5, 0]
+    },
+     category: {
+      $size: 2
+    }
+  }
+);
+
+use('cinema');
+db.movies.find(
+  {
+    $or: [
+      {
+        category: {
+          $all: ['sci-fi']
+        }
+      },
+      {
+        ratings: {
+          $elemMatch: {
+            $gt: 199
+          }
+        }
+      }
+    ]
+  },
+  {
+    _id: 0,
+    title: 1,
+    category: 1,
+    ratings: 1
+  }
+);
+
+use('cinema');
+db.movies.find(
+  {
+    ratings: {
+      $size: 4
+    },
+    $or: [
+      {
+        category: 'adventure'
+      },
+      {
+        category: 'family'
+      }
+      ],
+    imdbRating: {
+      $not: {
+        $lt: 7
+      }
+    }
+  },
+  {
+    _id: 0,
+  }
+);
+
+
+use('cinema');
+db.movies.find({ description: { $regex: /The/i } });
+
+use('cinema');
+db.movies.find({ description: { $regex: /humanity/i } });
