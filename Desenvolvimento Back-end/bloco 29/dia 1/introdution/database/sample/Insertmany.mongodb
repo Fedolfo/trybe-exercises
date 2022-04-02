@@ -1,0 +1,20 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('sample');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.sales.drop();
+
+// Insert a few documents into the sales collection.
+db.sales.insertMany([
+  { _id: 1,"productName": "Lapis", "stock": 10, "price": 20,"status":"A"},
+  { _id: 2,"productName": "Tesoura", "price": 5, "status": "B" },
+  { _id: 3, "productName": "Borracha", "price": 15, "status": "A" }
+]);
+
+// Run a find command to view items sold on April 4th, 2014.

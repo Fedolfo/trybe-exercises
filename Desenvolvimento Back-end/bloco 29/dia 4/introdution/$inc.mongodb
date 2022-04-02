@@ -1,0 +1,5 @@
+use('conteudo_trybe');
+db.increment.updateOne(
+  { sku: "abc123" },
+  { $inc: { quantity: -2, "metrics.orders": 1 } }
+);

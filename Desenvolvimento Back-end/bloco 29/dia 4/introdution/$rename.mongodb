@@ -1,0 +1,8 @@
+use('conteudo_trybe');
+db.fruits.updateOne(
+  { name: "Banana" },
+  { $rename: {
+      "name": "productName"
+    }
+  }
+);
