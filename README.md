@@ -51,14 +51,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - Trybewarts ]()_
+- [ ] 6-6: _[Projeto - Trybewarts ](https://github.com/Fedolfo/TrybeWarts)_
 
 ##### Bloco 7: JavaScript ES6 & Testes unitários
 
 - [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [ ] 7-2: _JavaScript ES6 - Objects_
 - [ ] 7-3: _Testes unitários em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes unitários]()_
+- [ ] 7-4: _[Projeto - JavaScript Testes unitários](https://github.com/Fedolfo/project-js-unit-tests)_
 
 ##### Bloco 8: JavaScript ES6
 
@@ -66,14 +66,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 - [ ] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-5: _[Projeto - Zoo functions]()_
+- [ ] 8-5: _[Projeto - Zoo functions](https://github.com/Fedolfo/project-zoo-functions)_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
 - [ ] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [ ] 9-3: _Jest - Testes Assíncronos_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [ ] 9-3: _[Projeto - Carrinho de Compras](https://github.com/Fedolfo/carrinho-compras)_
 
 ##### Bloco 10: Jest
 
