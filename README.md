@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 - [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [ ] 3-4: _HTML semântico_
-- [ ] 3-5: _[Projeto - HTML & CSS]()_
+- [ ] 3-5: _[Projeto - Lessons learned](https://github.com/Fedolfo/lessons-learned)_
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 - [ ] 4-2: _JavaScript - Array e loop For_
 - [ ] 4-3: _JavaScript - lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e funções_
-- [ ] 4-5: _[Projeto - Playground Functions]()_
+- [ ] 4-5: _[Projeto - Playground Functions](https://github.com/Fedolfo/project-playground-functions)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -51,7 +51,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - página inicial do Facebook]()_
+- [ ] 6-6: _[Projeto - Trybewarts ]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes unitários
 
@@ -71,7 +71,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 ##### Bloco 9: Assincronicidade & Callbacks
 
 - [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
+- [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [ ] 9-3: _Jest - Testes Assíncronos_
 - [ ] 9-3: _[Projeto - Carrinho de Compras]()_
 
 ##### Bloco 10: Jest
