@@ -1,0 +1,4 @@
+.venv
+pymongo/connection.py
+pymongo/__pycache__
+.vscode
