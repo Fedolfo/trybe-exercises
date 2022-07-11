@@ -12,3 +12,7 @@ def mdc(a, b):
 
 
 print(mdc(70, 25))
+
+from math import gcd
+
+print(gcd(70, 25))  # 5
