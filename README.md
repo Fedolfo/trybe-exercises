@@ -82,7 +82,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 - [ ] 10-3: _Jest - Simulando comportamentos_
 - [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/Fedolfo/project-js-unit-tests)_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :white_check_mark:
 
 ##### Bloco 11: Introdução - React
 
@@ -138,7 +138,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 
 - [ ] 18-1: _[Projeto - App de Receitas]()_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :white_check_mark:
 
 ##### Bloco 19: Docker utilizando containers
 - [ ] 19-1: _Utilizando Containers - Docker_
@@ -235,6 +235,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 
 - [ ] 32-1: VPS
 - [ ] 32-2: CI/CD
+
+## Ciência da Computação :white_check_mark:
 
 ##### Bloco 33 - Introdução à Python
 
