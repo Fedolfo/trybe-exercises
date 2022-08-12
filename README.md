@@ -220,3 +220,60 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda I
 - [ ] 29-4: _Updates Simples_
 - [ ] 29-5: _Updates Complexos - Arrays_
 - [ ] 29-6: _[Projeto - Commerce]()_
+
+##### Bloco 30 - MongoDb com Node.js e POO
+
+- [ ] 30-1: Mongoose e arquitetura MSC(camada Model)
+- [ ] 30-2: Mongoose e arquitetura MSC(camada Service e Controller)
+- [ ] 30-3: Projeto - Car Shop
+
+##### Bloco 31 - Projeto - App de Delivery
+
+- [ ] 31: Projeto - App de Delivery
+
+##### Bloco 32 - MasterClass - VPS, CI/CD
+
+- [ ] 32-1: VPS
+- [ ] 32-2: CI/CD
+
+##### Bloco 33 - Introdução à Python
+
+- [ ] 33-1: Introdução - Ciência da Computação
+- [ ] 33-2: Aprendendo Python
+- [ ] 33-3: Entrada e Saída de Dados
+- [ ] 33-4: Testes
+- [ ] 33-5: Projeto - Job Insights
+
+##### Bloco 34 - Padrões de Projeto
+
+- [ ] 34-1: P.O.O em Python
+- [ ] 34-2: Padrões - Iterator, Adapter, Strategy
+- [ ] 34-3: Padrões - Decorator, Observer, Factory
+- [ ] 34-4: Projeto - Relatórios de Estoque
+
+##### Bloco 35 - Redes e Raspagem de Dados
+
+- [ ] 35-1: Arquitetura de redes, ferramentas e segurança
+- [ ] 35-2: Raspagem de Dados
+- [ ] 35-3: Projeto - Tech news
+
+##### Bloco 36 - Algoritmos
+
+- [ ] 36-1: Complexidade de Algoritmos
+- [ ] 36-2: Recursividade e Estratégias para solução de problemas
+- [ ] 36-3: Algoritmos de ordenação e busca
+- [ ] 36-4: Projeto - Algoritmos
+
+##### Bloco 37 - Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
+
+- [ ] 37-1: Arquitetura de Computadores
+- [ ] 37-2: Arrays
+- [ ] 37-3: Nó e Listas Encadeadas
+- [ ] 37-4: Pilhas e Filas
+- [ ] 37-5: Projeto - TING - Trybe Is Not Google
+
+##### Bloco 38 - Estrutura de Dados II: Hashmaps e Sets
+
+- [ ] 38-1: Hashmap e Dict
+- [ ] 38-2: Set
+- [ ] 38-3: Projeto - Restaurant Orders
